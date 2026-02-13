@@ -4,8 +4,8 @@
 import { handleError } from "./configurations";
 import axios from "axios";
 
-// export const URL = "https://server.safe-ears.com/api";
-export const URL = "http://localhost:3000/api";  
+export const URL = "https://server.safe-ears.com/api";
+// export const URL = "http://localhost:3000/api";  
 
 const apiInstance = axios.create({
   baseURL: URL,
