@@ -71,12 +71,12 @@ const UpdateOrder = ({ toggleModal, data }) => {
               >
                 <option
                   value="pending"
-                  disabled={
-                    status === "pending" ||
-                    status === "processing" ||
-                    status === "shipped" ||
-                    status === "delivered"
-                  }
+                // disabled={
+                //   status === "pending" ||
+                //   status === "processing" ||
+                //   status === "shipped" ||
+                //   status === "delivered"
+                // }
                 >
                   Pending
                 </option>

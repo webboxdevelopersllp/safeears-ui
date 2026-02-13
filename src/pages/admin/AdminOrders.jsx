@@ -31,6 +31,7 @@ import { AiOutlineEdit } from "react-icons/ai";
 import UpdateOrder from "../../components/UpdateOrder";
 import axios from "axios";
 import { URL } from "../../Common/api";
+import toast from "react-hot-toast";
 
 const AdminOrders = () => {
   const dispatch = useDispatch();
@@ -43,10 +44,10 @@ const AdminOrders = () => {
   const [updateModal, setUpdateModal] = useState(false);
 
   const toggleUpdateModal = (data) => {
-    if (data.status === "cancelled") {
-      toast.error("Cannot Edit Cancelled Product");
-      return;
-    }
+    // if (data.status === "cancelled") {
+    //   toast.error("Cannot Edit Cancelled Product");
+    //   return;
+    // }
     if (data.status === "returned") {
       toast.error("Cannot Edit Returned Product");
       return;
